@@ -30,16 +30,16 @@ But instead only rickroll, we put another meme (or maybe anime song) link on You
 You can either
 - Config your reverse proxy to use this url as default page.
 ```
-rp.aoeyoei.xyz
+http://toonshouin.github.io/RandomProtect
 ```
 Like this Caddyfile
 ```Caddyfile
 :80 {
-        redir "https://rp.aoeyoei.xyz" 302
+        redir "http://toonshouin.github.io/RandomProtect/" 302
 }
 
 * {
-        redir "https://rp.aoeyoei.xyz" 302
+        redir "http://toonshouin.github.io/RandomProtect/" 302
         tls {
                 on_demand
         }
@@ -52,7 +52,7 @@ and so much more...
 
 <br>
 
-and you can try it by visiting [rp.aoeyoei.xyz](https://rp.aoeyoei.xyz)!
+and you can try it by visiting [http://toonshouin.github.io/RandomProtect](http://toonshouin.github.io/RandomProtect)!
 
 <hr>
 
@@ -63,7 +63,9 @@ and you can try it by visiting [rp.aoeyoei.xyz](https://rp.aoeyoei.xyz)!
 | -------- | ---- | ------ | ----------- |
 | Default | Default | [url/default.json](url/default.json) | Default Link that play on everyday.
 | Day | New Year Day | [url/day/new-year.json](url/day/new-year.json) | New Year Song (Only appear only on January 1st.)
-| Anime (Ensemble Stars) | Fine's Song | [url/anime/enstar/fine.json](url/anime/enstar/fine.json) | Song from fine, a Unit from Starmaker Production from Ensemble Stars (Have Chance 1 from 10 on everyday.)
+| Anime (Ensemble Stars) | Fine's Song | [url/anime/enstar/fine.json](url/anime/enstar/fine.json) | Song from fine, a Unit from Starmaker Production from Ensemble Stars (Have Chance 10 in 70 on everyday.)
+| Anime (Ensemble Stars) | Rabits's Song | [url/anime/enstar/fine.json](url/anime/enstar/fine.json) | Song from Rabits, a Unit from Rhythm Link from Ensemble Stars (Have Chance 11 in 70 on everyday.)
+| Default | NSFW | [url/nsfw.json](url/nsfw.json) | NSFW Song **(and only song, NO NSFW CONTENT RATHER THAN THIS!!)** and have 70 of 70 chances on everyday
 
 ## To Do List
 
@@ -109,4 +111,4 @@ Recommended only song, <b>I may declined your pull if you put video instead of s
 - (maybe) move to Svelte for smooth redirect.
 
 ---
-#### Made with ❤️ and 🍻 By Cartoon Kritthapath Yaviraj (ToonOeichi) <3 UwU | 1.0.0.012625
+#### Made with ❤️ and 🍻 By Cartoon Kritthapath Yaviraj (ToonOeichi) <3 UwU | 1.0.0.111926
